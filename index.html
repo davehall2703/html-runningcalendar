@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>16 Week Running Calendar</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>16 Week Running Calendar</h1>
+
+        <!-- Week 1 -->
+        <div class="week">
+            <h2>
+                Week 1 
+                <span class="arrow" onclick="toggleWeek(this)">▼</span>
+            </h2>
+            <div class="workouts">
+                <div class="workout">
+                    <input type="checkbox" id="workout1" />
+                    <label for="workout1">Run 5km</label>
+                    <span class="arrow" onclick="toggleDetails(this)">▼</span>
+                    <div class="details">
+                        <p>Details: A steady pace run focusing on form and endurance.</p>
+                    </div>
+                </div>
+                <div class="workout">
+                    <input type="checkbox" id="workout2" />
+                    <label for="workout2">Interval Training</label>
+                    <span class="arrow" onclick="toggleDetails(this)">▼</span>
+                    <div class="details">
+                        <p>Details: 4 x 400m sprints with 2 minutes rest in between.</p>
+                    </div>
+                </div>
+                <div class="workout">
+                    <input type="checkbox" id="workout3" />
+                    <label for="workout3">Long Run 10km</label>
+                    <span class="arrow" onclick="toggleDetails(this)">▼</span>
+                    <div class="details">
+                        <p>Details: A long, slow run focusing on endurance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Week 2 -->
+        <div class="week">
+            <h2>
+                Week 2 
+                <span class="arrow" onclick="toggleWeek(this)">▼</span>
+            </h2>
+            <div class="workouts">
+                <div class="workout">
+                    <input type="checkbox" id="workout4" />
+                    <label for="workout4">Hill Repeats</label>
+                    <span class="arrow" onclick="toggleDetails(this)">▼</span>
+                    <div class="details">
+                        <p>Details: 6 x 200m hill repeats, walk back to recover.</p>
+                    </div>
+                </div>
+                <div class="workout">
+                    <input type="checkbox" id="workout5" />
+                    <label for="workout5">Fartlek Run</label>
+                    <span class="arrow" onclick="toggleDetails(this)">▼</span>
+                    <div class="details">
+                        <p>Details: 30-minute run with 1-minute fast intervals every 5 minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Week 3 -->
+        <div class="week">
+            <h2>
+                Week 3 
+                <span class="arrow" onclick="toggleWeek(this)">▼</span>
+            </h2>
+            <div class="workouts">
+                <div class="workout">
+                    <input type="checkbox" id="workout6" />
+                    <label for="workout6">Tempo Run</label>
+                    <span class="arrow" onclick="toggleDetails(this)">▼</span>
+                    <div class="details">
+                        <p>Details: 5km at a comfortably hard pace.</p>
+                    </div>
+                </div>
+                <div class="workout">
+                    <input type="checkbox" id="workout7" />
+                    <label for="workout7">Recovery Run</label>
+                    <span class="arrow" onclick="toggleDetails(this)">▼</span>
+                    <div class="details">
+                        <p>Details: 30-minute easy pace run to recover.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Week 4 -->
+        <div class="week">
+            <h2>
+                Week 4 
+                <span class="arrow" onclick="toggleWeek(this)">▼</span>
+            </h2>
+            <div class="workouts">
+                <div class="workout">
+                    <input type="checkbox" id="workout8" />
+                    <label for="workout8">Long Run 12km</label>
+                    <span class="arrow" onclick="toggleDetails(this)">▼</span>
+                    <div class="details">
+                        <p>Details: Increase your long run distance to 12km.</p>
+                    </div>
+                </div>
+                <div class="workout">
+                    <input type="checkbox" id="workout9" />
+                    <label for="workout9">Speed Work</label>
+                    <span class="arrow" onclick="toggleDetails(this)">▼</span>
+                    <div class="details">
+                        <p>Details: 8 x 200m sprints with 3 minutes rest.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Pace Table</h2>
+        <table id="paceTable">
+            <tr>
+                <th>Pace Name</th>
+                <th>Pace (min/km)</th>
+            </tr>
+            <tr>
+                <td>Easy</td>
+                <td>6:00</td>
+            </tr>
+            <tr>
+                <td>Moderate</td>
+                <td>5:30</td>
+            </tr>
+            <tr>
+                <td>Hard</td>
+                <td>4:30</td>
+            </tr>
+        </table>
+
+        <!-- Link to Progress Page -->
+        <div class="progress-link">
+            <a href="progress.html" style="color: #FF4D00;">View Progress</a>
+        </div>
+    </div>
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

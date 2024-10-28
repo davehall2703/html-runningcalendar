@@ -1,0 +1,137 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Use a bold sans-serif font */
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text for contrast */
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/running-background.jpg"); /* Add your background image here */
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Don't repeat the image */
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto; /* Center the container */
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0.8); /* Darker gray with transparency for main container */
+    border-radius: 12px; /* Slightly rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Deeper shadow for a modern look */
+}
+
+h1, h2 {
+    text-align: center; /* Center the headers */
+    margin: 20px 0; /* Space above and below headers */
+    font-weight: 600; /* Bold headers */
+}
+
+.week {
+    margin-bottom: 30px; /* Space between weeks */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Light line separator */
+    padding-bottom: 10px; /* Space below the week header */
+}
+
+.workouts {
+    overflow: hidden; /* Prevent overflow during transition */
+    transition: max-height 0.4s ease; /* Smooth transition for height */
+    max-height: 0; /* Start with max-height of 0 for collapse effect */
+}
+
+.workouts.active {
+    max-height: 500px; /* Adjust this to the maximum height needed for expanded content */
+}
+
+.arrow {
+    cursor: pointer; /* Change cursor to pointer for arrow */
+    font-weight: bold;
+    margin-left: 10px; /* Space between text and arrow */
+    color: #FF4D00; /* Bandit Running's accent color */
+}
+
+.workout {
+    margin: 15px 0; /* Space between workouts */
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Light border around workout */
+    border-radius: 8px; /* Rounded corners for workouts */
+    background-color: rgba(50, 50, 50, 0.8); /* Slightly lighter gray background */
+    transition: background-color 0.3s; /* Transition for background color */
+}
+
+.workout:hover {
+    background-color: rgba(70, 70, 70, 0.9); /* Darken background on hover */
+}
+
+.details {
+    overflow: hidden; /* Prevent overflow during transition */
+    transition: max-height 0.4s ease; /* Smooth transition for height */
+    max-height: 0; /* Start with max-height of 0 for collapse effect */
+}
+
+.details.active {
+    max-height: 100px; /* Adjust this for the height needed for expanded details */
+}
+
+label {
+    cursor: pointer; /* Change cursor for checkbox label */
+    color: #FF4D00; /* Bandit Running's accent color */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+    margin-top: 30px; /* Space above the table */
+}
+
+th, td {
+    border: 1px solid #ffffff; /* White borders */
+    padding: 8px;
+    text-align: left; /* Left-align text */
+}
+
+th {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for header */
+    font-weight: bold; /* Bold header text */
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05); /* Zebra striping for rows */
+}
+
+.progress-link, .calendar-link {
+    text-align: center; /* Center the link */
+    margin-top: 20px; /* Space above the link */
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the link bold */
+}
+
+#weeklyProgress {
+    margin-top: 20px; /* Space above weekly progress */
+}
+
+canvas {
+    margin: 20px auto; /* Center the canvas */
+    display: block; /* Ensure it's a block element */
+}
+
+.week-container {
+    margin: 20px 0; /* Space between week containers */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Light border for week container */
+    border-radius: 8px; /* Rounded corners for week container */
+}
+
+.collapsible {
+    cursor: pointer; /* Change cursor for collapsible header */
+    background-color: rgba(255, 255, 255, 0.1); /* Background color for header */
+    padding: 10px; /* Padding for header */
+    font-weight: bold; /* Bold header text */
+}
+
+.week-details {
+    padding: 10px; /* Padding for details */
+    background-color: rgba(50, 50, 50, 0.7); /* Background color for details */
+    border-radius: 0 0 8px 8px; /* Round the bottom corners */
+}
+

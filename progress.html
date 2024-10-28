@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Progress Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Progress</h1>
+
+        <!-- Link back to the Calendar Page -->
+        <div class="calendar-link">
+            <a href="index.html" style="color: #FF4D00;">Back to Calendar</a>
+        </div>
+
+        <!-- Overall Progress Bar -->
+        <canvas id="progressChart" width="300" height="100"></canvas>
+        <div id="weeklyProgress"></div>
+        <button onclick="resetProgress()">Reset Progress</button>
+    </div>
+    <script src="progress.js"></script>
+</body>
+</html>
